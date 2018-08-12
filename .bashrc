@@ -13,7 +13,7 @@ Red='\e[0;31m'
 White='\e[0;37m'
 Reset='\e[0m'
 
-export PS1="\[$White\][\[$Brown\]\u\[$White\]:\[$Blue\]\w\[$White\]] \[$Brown\]\\\$ \[$Reset\]"
+export PS1="\[$White\][\[$Brown\]\u@\H\[$White\]:\[$Blue\]\w\[$White\]] \[$Brown\]\\\$ \[$Reset\]"
 export MC_SKIN=${HOME}/.config/mc/solarized.ini
 export HISTTIMEFORMAT="[%d/%m/%y %T] "
 export HISTCONTROL=ignoredups:erasedups
@@ -23,6 +23,10 @@ export EDITOR="vim"
 
 alias grep='LC_ALL=C grep --color'
 alias ls='ls -F --color=auto'
+alias ssh='TERM=xterm ssh'
+
+export CC="ccache gcc"
+export CXX="ccache g++"
 
 man() {
 	env \
@@ -37,3 +41,4 @@ man() {
 }
 
 eval `dircolors -b /usr/share/LS_COLORS`
+xrdb -merge ~/.Xresources
