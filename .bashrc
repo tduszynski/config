@@ -40,5 +40,5 @@ man() {
 		man "$@"
 }
 
-eval `dircolors -b /usr/share/LS_COLORS`
+eval `dircolors -b /usr/share/LS_COLORS/LS_COLORS`
 xrdb -merge ~/.Xresources
