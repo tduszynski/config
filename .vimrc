@@ -6,6 +6,7 @@ Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-scripts/a.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 " map leader to spacebar
@@ -14,6 +15,7 @@ let g:mapleader = "\<space>"
 " tagbar settings
 let g:tagbar_sort = 1
 let g:tagbar_compact = 1
+let g:tagbar_left = 1
 
 " nerdtree settings
 let g:NERDTreeIgnore = ['\.o$', '\.\d$', '\.out$', '\.lo$', '\.la$']
@@ -22,10 +24,6 @@ let g:NERDTreeIgnore = ['\.o$', '\.\d$', '\.out$', '\.lo$', '\.la$']
 map <silent> <leader><cr> :noh<cr>
 map <leader>w :w!<cr>
 map <leader>q :q!<cr>
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
 map <leader>tb :Tagbar<cr>
 map <leader>nt :NERDTree<cr>
 
