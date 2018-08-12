@@ -25,9 +25,6 @@ alias grep='LC_ALL=C grep --color'
 alias ls='ls -F --color=auto'
 alias ssh='TERM=xterm ssh'
 
-export CC="ccache gcc"
-export CXX="ccache g++"
-
 man() {
 	env \
 		LESS_TERMCAP_mb=$(printf $Red) \
